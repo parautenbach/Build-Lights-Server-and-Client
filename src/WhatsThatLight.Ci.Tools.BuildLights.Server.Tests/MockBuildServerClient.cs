@@ -1,0 +1,86 @@
+﻿// <copyright file="MockBuildServerClient.cs" company="What's That Light?">
+// Copyright 2013 Pieter Rautenbach
+// 
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+// 
+//   http://www.apache.org/licenses/LICENSE-2.0
+// 
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+// </copyright>
+namespace WhatsThatLight.Ci.Tools.BuildLights.Server.Tests
+{
+    using System.Collections.Generic;
+
+    using WhatsThatLight.Ci.Tools.BuildLights.Common.Interfaces;
+    using WhatsThatLight.Ci.Tools.BuildLights.Server.Interfaces;
+
+    /// <summary>
+    /// A mock class.
+    /// </summary>
+    internal class MockBuildServerClient : IBuildServerClient
+    {
+        #region Constructors and Destructors
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MockBuildServerClient"/> class.
+        /// </summary>
+        /// <param name="credentials">The credentials.</param>
+        public MockBuildServerClient(ICredentials credentials)
+        {
+            this.Credentials = credentials;
+        }
+
+        #endregion
+
+        #region Properties
+
+        /// <summary>
+        /// Gets or sets the credentials.
+        /// </summary>
+        /// <value>
+        /// The credentials.
+        /// </value>
+        public ICredentials Credentials { get; set; }
+
+        #endregion
+
+        #region Implemented Interfaces
+
+        #region IBuildServerClient
+
+        /// <summary>
+        /// Gets all running builds. A build is considered active when it is building, hanging
+        /// or failing (about to fail).
+        /// </summary>
+        /// <returns>
+        /// Collection of <see cref="IBuildServerNotification"/>
+        /// </returns>
+        public IEnumerable<IBuildServerNotification> GetAllActiveBuildNotifications()
+        {
+            return new List<IBuildServerNotification>();
+        }
+
+        /// <summary>
+        /// Gets all current builds in error. A build is considered in error when it has failed,
+        /// failed to start, failing (about to fail), hanging or responsibility has been assigned
+        /// in any way.
+        /// </summary>
+        /// <returns>
+        /// Collection of <see cref="IBuildServerNotification"/>
+        /// </returns>
+        public IEnumerable<IBuildServerNotification> GetAllBuildsThatRequireAttention()
+        {
+            return new List<IBuildServerNotification>();
+        }
+
+        #endregion
+
+        #endregion
+    }
+}

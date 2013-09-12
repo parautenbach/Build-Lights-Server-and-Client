@@ -1,0 +1,15 @@
+======================================================================
+
+Build Interrupted (Cancelled?) TeamCity Notifier Plugin Build Lights
+http://confluence.jetbrains.net/display/TCD65/Server-side+Object+Model 
+
+======================================================================
+
+TeamCity Plugin Settings (Notifier Build Lights TODO)
+http://confluence.jetbrains.net/display/TCD65/Plugin+Settings 
+
+Server-wide settings
+A plugin can store server-wide setting in main-config.xml file (which is stored in TEAMCITY_DATA_PATH/config directory). To use this file, the plugin should register an extension which implements jetbrains.buildServer.serverSide.MainConfigProcessor .
+This interface has methods which allow to load and save some data in XML format (via JDOM). Please note, that the plugin will be asked to reinitialize data if the file was changed on the disk while TeamCity is up and running.
+
+======================================================================

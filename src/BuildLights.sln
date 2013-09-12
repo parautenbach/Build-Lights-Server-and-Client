@@ -1,0 +1,100 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsThatLight.Ci.Tools.BuildLights.Server", "WhatsThatLight.Ci.Tools.BuildLights.Server\WhatsThatLight.Ci.Tools.BuildLights.Server.csproj", "{39F3ADD0-EC11-4BA2-B07A-CD085A0027DB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3BC4BD73-4E52-41D1-9276-F50CC8F1C16A} = {3BC4BD73-4E52-41D1-9276-F50CC8F1C16A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsThatLight.Ci.Tools.BuildLights.Common", "WhatsThatLight.Ci.Tools.BuildLights.Common\WhatsThatLight.Ci.Tools.BuildLights.Common.csproj", "{62D580EA-EC3E-452B-8814-B992F5DFD63C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsThatLight.Ci.Tools.BuildLights.Server.ConsoleApplication", "WhatsThatLight.Ci.Tools.BuildLights.Server.ConsoleApplication\WhatsThatLight.Ci.Tools.BuildLights.Server.ConsoleApplication.csproj", "{BC9B8132-277A-4A51-B82E-2849CDC647C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsThatLight.Ci.Tools.BuildLights.Common.Tests", "WhatsThatLight.Ci.Tools.BuildLights.Common.Tests\WhatsThatLight.Ci.Tools.BuildLights.Common.Tests.csproj", "{3BC4BD73-4E52-41D1-9276-F50CC8F1C16A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsThatLight.Ci.Tools.BuildLights.Server.Tests", "WhatsThatLight.Ci.Tools.BuildLights.Server.Tests\WhatsThatLight.Ci.Tools.BuildLights.Server.Tests.csproj", "{740D7049-6077-44E8-9CF5-8F87D06E8E8B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BC9B8132-277A-4A51-B82E-2849CDC647C6} = {BC9B8132-277A-4A51-B82E-2849CDC647C6}
+		{3BC4BD73-4E52-41D1-9276-F50CC8F1C16A} = {3BC4BD73-4E52-41D1-9276-F50CC8F1C16A}
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ContinuousIntegrationLightsServerSetup", "ContinuousIntegrationLightsServerSetup\ContinuousIntegrationLightsServerSetup.vdproj", "{5574350E-763E-44DC-BF54-888B21815D88}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BC9B8132-277A-4A51-B82E-2849CDC647C6} = {BC9B8132-277A-4A51-B82E-2849CDC647C6}
+		{740D7049-6077-44E8-9CF5-8F87D06E8E8B} = {740D7049-6077-44E8-9CF5-8F87D06E8E8B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsThatLight.Ci.Tools.BuildLights.Client", "WhatsThatLight.Ci.Tools.BuildLights.Client\WhatsThatLight.Ci.Tools.BuildLights.Client.csproj", "{9BD23123-9E29-4EE6-8879-03A002720CC4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3BC4BD73-4E52-41D1-9276-F50CC8F1C16A} = {3BC4BD73-4E52-41D1-9276-F50CC8F1C16A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsThatLight.Ci.Tools.BuildLights.Client.Tests", "WhatsThatLight.Ci.Tools.BuildLights.Client.Tests\WhatsThatLight.Ci.Tools.BuildLights.Client.Tests.csproj", "{71EFF9B3-75D3-4B04-BBED-FA74E67AE9D3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3BC4BD73-4E52-41D1-9276-F50CC8F1C16A} = {3BC4BD73-4E52-41D1-9276-F50CC8F1C16A}
+		{0B85EA8D-217E-4A03-A881-7D5AD9FAE8B0} = {0B85EA8D-217E-4A03-A881-7D5AD9FAE8B0}
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ContinuousIntegrationLightsClientSetup", "ContinuousIntegrationLightsClientSetup\ContinuousIntegrationLightsClientSetup.vdproj", "{5D36972C-3D1D-496F-8639-B6F58D6E0DC9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0B85EA8D-217E-4A03-A881-7D5AD9FAE8B0} = {0B85EA8D-217E-4A03-A881-7D5AD9FAE8B0}
+		{71EFF9B3-75D3-4B04-BBED-FA74E67AE9D3} = {71EFF9B3-75D3-4B04-BBED-FA74E67AE9D3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsThatLight.Ci.Tools.BuildLights.Client.ConsoleApplication", "WhatsThatLight.Ci.Tools.BuildLights.Client.ConsoleApplication\WhatsThatLight.Ci.Tools.BuildLights.Client.ConsoleApplication.csproj", "{0B85EA8D-217E-4A03-A881-7D5AD9FAE8B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{143953AA-CFE0-4B23-AE4D-B22BC104D4F0}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+		TODO.txt = TODO.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39F3ADD0-EC11-4BA2-B07A-CD085A0027DB}.Debug|x86.ActiveCfg = Debug|x86
+		{39F3ADD0-EC11-4BA2-B07A-CD085A0027DB}.Debug|x86.Build.0 = Debug|x86
+		{39F3ADD0-EC11-4BA2-B07A-CD085A0027DB}.Release|x86.ActiveCfg = Release|x86
+		{39F3ADD0-EC11-4BA2-B07A-CD085A0027DB}.Release|x86.Build.0 = Release|x86
+		{62D580EA-EC3E-452B-8814-B992F5DFD63C}.Debug|x86.ActiveCfg = Debug|x86
+		{62D580EA-EC3E-452B-8814-B992F5DFD63C}.Debug|x86.Build.0 = Debug|x86
+		{62D580EA-EC3E-452B-8814-B992F5DFD63C}.Release|x86.ActiveCfg = Release|x86
+		{62D580EA-EC3E-452B-8814-B992F5DFD63C}.Release|x86.Build.0 = Release|x86
+		{BC9B8132-277A-4A51-B82E-2849CDC647C6}.Debug|x86.ActiveCfg = Debug|x86
+		{BC9B8132-277A-4A51-B82E-2849CDC647C6}.Debug|x86.Build.0 = Debug|x86
+		{BC9B8132-277A-4A51-B82E-2849CDC647C6}.Release|x86.ActiveCfg = Release|x86
+		{BC9B8132-277A-4A51-B82E-2849CDC647C6}.Release|x86.Build.0 = Release|x86
+		{3BC4BD73-4E52-41D1-9276-F50CC8F1C16A}.Debug|x86.ActiveCfg = Debug|x86
+		{3BC4BD73-4E52-41D1-9276-F50CC8F1C16A}.Debug|x86.Build.0 = Debug|x86
+		{3BC4BD73-4E52-41D1-9276-F50CC8F1C16A}.Release|x86.ActiveCfg = Release|x86
+		{3BC4BD73-4E52-41D1-9276-F50CC8F1C16A}.Release|x86.Build.0 = Release|x86
+		{740D7049-6077-44E8-9CF5-8F87D06E8E8B}.Debug|x86.ActiveCfg = Debug|x86
+		{740D7049-6077-44E8-9CF5-8F87D06E8E8B}.Debug|x86.Build.0 = Debug|x86
+		{740D7049-6077-44E8-9CF5-8F87D06E8E8B}.Release|x86.ActiveCfg = Release|x86
+		{740D7049-6077-44E8-9CF5-8F87D06E8E8B}.Release|x86.Build.0 = Release|x86
+		{5574350E-763E-44DC-BF54-888B21815D88}.Debug|x86.ActiveCfg = Debug
+		{5574350E-763E-44DC-BF54-888B21815D88}.Release|x86.ActiveCfg = Release
+		{5574350E-763E-44DC-BF54-888B21815D88}.Release|x86.Build.0 = Release
+		{9BD23123-9E29-4EE6-8879-03A002720CC4}.Debug|x86.ActiveCfg = Debug|x86
+		{9BD23123-9E29-4EE6-8879-03A002720CC4}.Debug|x86.Build.0 = Debug|x86
+		{9BD23123-9E29-4EE6-8879-03A002720CC4}.Release|x86.ActiveCfg = Release|x86
+		{9BD23123-9E29-4EE6-8879-03A002720CC4}.Release|x86.Build.0 = Release|x86
+		{71EFF9B3-75D3-4B04-BBED-FA74E67AE9D3}.Debug|x86.ActiveCfg = Debug|x86
+		{71EFF9B3-75D3-4B04-BBED-FA74E67AE9D3}.Debug|x86.Build.0 = Debug|x86
+		{71EFF9B3-75D3-4B04-BBED-FA74E67AE9D3}.Release|x86.ActiveCfg = Release|x86
+		{71EFF9B3-75D3-4B04-BBED-FA74E67AE9D3}.Release|x86.Build.0 = Release|x86
+		{5D36972C-3D1D-496F-8639-B6F58D6E0DC9}.Debug|x86.ActiveCfg = Debug
+		{5D36972C-3D1D-496F-8639-B6F58D6E0DC9}.Release|x86.ActiveCfg = Release
+		{5D36972C-3D1D-496F-8639-B6F58D6E0DC9}.Release|x86.Build.0 = Release
+		{0B85EA8D-217E-4A03-A881-7D5AD9FAE8B0}.Debug|x86.ActiveCfg = Debug|x86
+		{0B85EA8D-217E-4A03-A881-7D5AD9FAE8B0}.Debug|x86.Build.0 = Debug|x86
+		{0B85EA8D-217E-4A03-A881-7D5AD9FAE8B0}.Release|x86.ActiveCfg = Release|x86
+		{0B85EA8D-217E-4A03-A881-7D5AD9FAE8B0}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
